@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store | BUY</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="icon" href="/images/logo.png" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+  </head>
+
+  <body>
+    <!-- start-header -->
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-lg-4 d-flex justify-content-start">
+              <a href=""><img width="40%" src="/images/logo.png" alt="" /></a>
+            </div>
+            <div class="col-6 col-lg-4 d-flex align-items-center">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="ابحث عن الهدية المطلوبة"
+              />
+            </div>
+            <div
+              class="col-lg-4 d-flex align-items-center my-butn justify-content-end d-lg-flex d-none"
+            >
+              <a
+                data-bs-toggle="offcanvas"
+                href="#cart-canvas"
+                role="button"
+                aria-controls="offcanvasExample"
+                ><span>السلة</span><i class="fa-solid fa-cart-arrow-down"></i
+              ></a>
+              <a
+                data-bs-toggle="offcanvas"
+                href="#user-canvas"
+                role="button"
+                aria-controls="offcanvasExample"
+                ><span>الدخول</span><i class="fa-solid fa-user"></i
+              ></a>
+              <a href=""
+                ><span>المفضلة</span><i class="fa-solid fa-heart"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bot">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  href="#user-canvas"
+                >
+                  <i class="fa-solid fa-user"></i>
+                </button>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  href="#cart-canvas"
+                >
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                </button>
+              </div>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">الرئيسية</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="category.html">مناسبة للاطفال</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="category.html">رجالي</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="category.html">نسائي</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="category.html">قوالب كيك</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="category.html">ورود</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end-header -->
+
+    <div class="bunner">
+      <h1>اتمام الطلب</h1>
+    </div>
+
+    <section class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="payments-info">
+              <div>
+                <label for="" class="form-label">اسم المستخدم</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="اسم المستخدم"
+                />
+              </div>
+              <div class="mt-3">
+                <label for="" class="form-label">البريد الالكتروني </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="البريد الالكتروني "
+                />
+              </div>
+              <div class="mt-3">
+                <label for="" class="form-label">رقم الهاتف </label>
+                <input
+                  id="phone"
+                  class="form-control"
+                  type="tel"
+                  placeholder="رقم الهاتف "
+                />
+              </div>
+              <div class="mt-3">
+                <label for="" class="form-label">اسم البلد</label>
+                <select class="form-select" name="" id="">
+                  <option value="" disabled selected>اختيار البلد</option>
+                  <option value="">سوريا</option>
+                  <option value="">لبنان</option>
+                  <option value="">مصر</option>
+                  <option value="">الجزائر</option>
+                  <option value="">تونس</option>
+                  <option value="">السعودية</option>
+                </select>
+              </div>
+              <div class="mt-3">
+                <label for="" class="form-label">اسم المدينة</label>
+                <select class="form-select" name="" id="">
+                  <option value="" disabled selected>اختيار المدينة</option>
+                  <option value="">دمشق</option>
+                  <option value="">بيروت</option>
+                  <option value="">القاهرة</option>
+                  <option value="">الجزائر</option>
+                  <option value="">تونس</option>
+                  <option value="">الرياض</option>
+                </select>
+              </div>
+              <div class="mt-3">
+                <label for="" class="form-label">تفاصيل السكن </label>
+                <input
+                  name=""
+                  class="form-control"
+                  type="text"
+                  placeholder=" تفاصيل السكن "
+                />
+              </div>
+              <div class="mt-3">
+                <label for="" class="form-label">معلومات حول الشحن </label>
+                <textarea
+                  name=""
+                  id=""
+                  class="form-control"
+                  rows="19"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row-cols-1">
+              <div
+                class="col d-flex flex-row justify-content-between align-items-center cart-page"
+              >
+                <p class="cart-title">المنتح</p>
+
+                <p class="cart-title">السعر</p>
+                <p class="cart-title">الكمية</p>
+                <p class="cart-title">السعر النهائي</p>
+              </div>
+              <div
+                class="col d-flex flex-row justify-content-between align-items-center cart-page mt-2"
+              >
+                <div
+                  class="d-flex flex-column flex-md-row align-items-center gap-2"
+                >
+                  <img
+                    class="img-fluid"
+                    width="75px"
+                    src="images/bear-p.jpg"
+                    alt=""
+                  />
+                  <p>صديق مخلص</p>
+                </div>
+                <p>50$</p>
+                <div
+                  class="btn-group bord"
+                  role="group"
+                  aria-label="Basic example"
+                >
+                  <button type="button" class="btn">-</button>
+                  <button type="button" class="btn">1</button>
+                  <button type="button" class="btn">+</button>
+                </div>
+                <p>150$</p>
+              </div>
+              <div
+                class="col d-flex flex-row justify-content-between align-items-center cart-page mt-2"
+              >
+                <div
+                  class="d-flex flex-column flex-md-row align-items-center gap-2"
+                >
+                  <img
+                    class="img-fluid"
+                    width="75px"
+                    src="images/cake-p.jpg"
+                    alt=""
+                  />
+                  <p>قالب كيك</p>
+                </div>
+                <p>45$</p>
+                <div
+                  class="btn-group bord"
+                  role="group"
+                  aria-label="Basic example"
+                >
+                  <button type="button" class="btn">-</button>
+                  <button type="button" class="btn">1</button>
+                  <button type="button" class="btn">+</button>
+                </div>
+                <p>90$</p>
+              </div>
+              <div
+                class="col d-flex flex-row justify-content-between align-items-center cart-page mt-2"
+              >
+                <div
+                  class="d-flex flex-column flex-md-row align-items-center gap-2"
+                >
+                  <img
+                    class="img-fluid"
+                    width="75px"
+                    src="images/men-p.jpg"
+                    alt=""
+                  />
+                  <p>طقم رجالي</p>
+                </div>
+                <p>95$</p>
+                <div
+                  class="btn-group bord"
+                  role="group"
+                  aria-label="Basic example"
+                >
+                  <button type="button" class="btn">-</button>
+                  <button type="button" class="btn">1</button>
+                  <button type="button" class="btn">+</button>
+                </div>
+                <p>95$</p>
+              </div>
+              <div
+                class="col d-flex flex-row justify-content-between align-items-center cart-page mt-2"
+              >
+                <div
+                  class="d-flex flex-column flex-md-row align-items-center gap-2"
+                >
+                  <img
+                    class="img-fluid"
+                    width="75px"
+                    src="images/kids3-p.jpg"
+                    alt=""
+                  />
+                  <p>ساعة ذكية</p>
+                </div>
+                <p>50$</p>
+                <div
+                  class="btn-group bord"
+                  role="group"
+                  aria-label="Basic example"
+                >
+                  <button type="button" class="btn">-</button>
+                  <button type="button" class="btn">1</button>
+                  <button type="button" class="btn">+</button>
+                </div>
+                <p>100$</p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between gap-2 mt-4">
+              <div class="d-flex w-100">
+                <input
+                  class="form-control w-50 text-center"
+                  type="text"
+                  placeholder="كود الحسم"
+                />
+                <button class="btn btn-success">تطبيق الحسم</button>
+              </div>
+              <div>
+                <p class="text-danger">الاجمالي:1500$</p>
+              </div>
+            </div>
+            <hr />
+            <div class="payments-left">
+              <div class="payments mt-3">
+                <div class="d-flex flex-row justify-content-between my-2">
+                  <div>
+                    <input type="radio" name="payments" />
+                    <label for="" class="form-label align-items-center"
+                      >الدفع باستخدام بايبال</label
+                    >
+                  </div>
+                  <div>
+                    <input type="radio" name="payments" />
+                    <label for="" class="form-label align-items-center"
+                      >الدفع باستخدام فيزا كارد</label
+                    >
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between my-2">
+                  <div>
+                    <input type="radio" name="payments" />
+                    <label for="" class="form-label align-items-center"
+                      >الدفع باستخدام حوالة بنكية</label
+                    >
+                  </div>
+                  <div>
+                    <input type="radio" name="payments" />
+                    <label for="" class="form-label align-items-center"
+                      >الدفع باستخدام شام كاش</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="visa-pay my-3">
+                <h4>يمكنك الدفع بشكل امن عن طريق الفيزا كارد</h4>
+                <div>
+                  <label for="" class="form-label">رقم البطاقة</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="رقم البطاقة"
+                  />
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                  <div class="w-100">
+                    <label for="" class="form-label">مدة انتهاء البطاقة</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="سنة/شهر "
+                    />
+                  </div>
+                  <div class="w-100">
+                    <label for="" class="form-label">رمز الامان </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="cvc "
+                    />
+                  </div>
+                </div>
+                <button class="btn btn-success w-100 mt-3">اتمام الشراء</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- start-footer -->
+    <footer>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+          <div class="col footer-f">
+            <img class="mb-2" src="images/logo.png" alt="logo" />
+            <p>
+              اكتشف عالم الهدايا المميزة مع متجرنا، حيث نؤمن أن كل هدية تحمل
+              رسالة خاصة. نقدم لك مجموعة متنوعة من الهدايا الأنيقة والمبتكرة
+              التي تناسب جميع المناسبات
+            </p>
+            <ul class="navbar-nav">
+              <li><i class="fa-solid fa-location-dot"></i>سوريا-دمشق</li>
+              <li><i class="fa-solid fa-phone"></i>0962274517</li>
+              <li>
+                <i class="fa-solid fa-envelope-open"></i
+                >alaatakrouri89@gmail.com
+              </li>
+            </ul>
+          </div>
+          <div class="col mt-5 text-center footer-s">
+            <h3>روابط مهمة</h3>
+            <ul class="navbar-nav">
+              <li>
+                <a href=""
+                  ><i class="fa-brands fa-instagram"></i>gifto-instagram</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-brands fa-facebook"></i>gifto-facebook</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-brands fa-whatsapp"></i>gifto-whatsapp</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-brands fa-linkedin"></i>alaa-linkedin</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col mt-5 text-center footer-t">
+            <h3>التصنيفات</h3>
+            <ul class="navbar-nav">
+              <li><a href="">رجالي</a></li>
+              <li><a href="">نسائي</a></li>
+              <li><a href="">ولادي</a></li>
+              <li><a href="">حسومات</a></li>
+            </ul>
+          </div>
+          <div class="col mt-5 text-center footer-fo">
+            <h3>النشرة البريدية</h3>
+            <p>
+              كتشف عالم الهدايا المميزة مع متجرنا، حيث نؤمن أن كل هدية تحمل
+              رسالة خاصة. نقدم لك مجموعة متنوعة من الهدايا الأنيقة
+            </p>
+            <form action="">
+              <input
+                class="form-control text-start mt-3"
+                type="email"
+                placeholder="ادخل بريدك الالكتروني"
+              />
+            </form>
+            <button class="mt-4 btn w-100 footer-btn">التسجيل في النشرة</button>
+          </div>
+        </div>
+        <div
+          class="row row-cols-1 row-cols-md-2 footer-bootm d-flex justify-content-start"
+        >
+          <div class="col pay-footer">
+            <a href=""><i class="fa-solid fa-credit-card fa-2x"></i></a>
+            <a href=""><i class="fa-regular fa-money-bill-1 fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-cc-paypal fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-bitcoin fa-2x"></i></a>
+          </div>
+          <div class="col footer-c d-flex justify-content-end">
+            <p>جميع الحقوق محفوظة © 2025</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end-footer -->
+
+    <!-- canvas-cart -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="cart-canvas"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">السلة</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row row-mini-cart">
+          <div class="col-12 mini-cart">
+            <img width="20%" src="/images/cake-new.jpg" alt="" />
+            <p>قالب كيك التيراميسو</p>
+            <div class="btn-group bord" role="group" aria-label="Basic example">
+              <button type="button" class="btn">-</button>
+              <button type="button" class="btn">1</button>
+              <button type="button" class="btn">+</button>
+            </div>
+          </div>
+          <div class="col-12 mini-cart">
+            <img width="20%" src="/images/girls-new.jpg" alt="" />
+            <p>ادوات ميك اب</p>
+            <div class="btn-group bord" role="group" aria-label="Basic example">
+              <button type="button" class="btn">-</button>
+              <button type="button" class="btn">1</button>
+              <button type="button" class="btn">+</button>
+            </div>
+          </div>
+          <div class="col-12 mini-cart">
+            <img width="20%" src="/images/men-new.jpg" alt="" />
+            <p>ساعة رجالي</p>
+            <div class="btn-group bord" role="group" aria-label="Basic example">
+              <button type="button" class="btn">-</button>
+              <button type="button" class="btn">1</button>
+              <button type="button" class="btn">+</button>
+            </div>
+          </div>
+          <div class="col-12 mini-cart">
+            <img width="20%" src="/images/kids-new.jpg" alt="" />
+            <p>حافظة مياة</p>
+            <div class="btn-group bord" role="group" aria-label="Basic example">
+              <button type="button" class="btn">-</button>
+              <button type="button" class="btn">1</button>
+              <button type="button" class="btn">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="canvas-alert mt-2">
+          <p class="alert alert-danger text-center">المجموع الكلي 300$ فقط</p>
+          <div class="canvas-btn-bot">
+            <a href="cart.html">
+              <button class="btn btn-danger">تفاصيل السلة</button>
+            </a>
+            <button class="btn btn-success">اتمام الطلب</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end-canvas -->
+    <!-- canvas-sign -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="user-canvas"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">تسجيل الدخول</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="off-sign-in">
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">اسم المستخدم</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">كلمة المرور</label>
+              <input type="password" class="form-control" id="password" />
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >تذكرني
+              </label>
+            </div>
+            <button type="submit" class="btn w-100 sign-in">
+              تسجيل الدخول
+            </button>
+          </form>
+          <div class="alert alert-danger text-center mt-2 remeber mt-3">
+            <a href="">هل نسيت كلمة المرور</a>
+          </div>
+          <hr />
+          <div class="text-center">
+            <div class="mt-5 new-acc">
+              <i class="fa-solid fa-user-plus fa-3x"></i>
+              <p>للانضمام الى مجتمعنا</p>
+            </div>
+            <button class="btn btn-success w-100">انشاء حساب جديد</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end-canvas -->
+
+    <!-- start-modal -->
+    <!-- Modal -->
+    <div
+      class="modal fade modal-lg"
+      id="prodact-modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              قالب كيك التيراميسو
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row row-cols-1 row-cols-md-2">
+              <div class="col">
+                <div class="modal-img mt-4">
+                  <img width="100%" src="/images/cake-new.jpg" alt="" />
+                  <a href="prodacts.html">
+                    <button class="btn w-100 mt-2 modal-butn">
+                      عرض كافة التفاصيل
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="modal-info">
+                  <img
+                    class="mt-5 mt-md-0"
+                    width="100%"
+                    src="/images/modal-logo.png"
+                    alt=""
+                  />
+                  <h1>قالب كيك التيراميسو</h1>
+                  <p>
+                    نوع جديد كيك التيراميسو الغية بكريما النسكافية التي تطفي طعم
+                    رائع
+                  </p>
+                </div>
+                <div class="customer-review">
+                  <div class="modal-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="modal-price">
+                    <span>السعر:</span>
+                    <span>75$</span>
+                  </div>
+                </div>
+                <div class="modal-r-butn mt-5">
+                  <div>
+                    <button class="btn btn-danger">اضافة الى السلة</button>
+                    <button class="btn btn-success">شراء الان</button>
+                  </div>
+                  <div
+                    class="btn-group bord"
+                    role="group"
+                    aria-label="Basic example"
+                  >
+                    <button type="button" class="btn">-</button>
+                    <button type="button" class="btn">1</button>
+                    <button type="button" class="btn">+</button>
+                  </div>
+                </div>
+                <hr />
+                <div class="category-modal">
+                  <div class="row">
+                    <div class="col category-mo mt-4">
+                      <span>التصنيف:</span>
+                      <span>قالب كيك</span>
+                    </div>
+                    <div class="col d-flex gap-2 mt-4 modal-icons">
+                      <span>مشاركة</span>
+                      <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                      <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                      <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end-modal -->
+
+    <!-- intl-tel-input JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+    <script>
+      const input = document.querySelector("#phone");
+      window.intlTelInput(input, {
+        initialCountry: "auto",
+        geoIpLookup: function (callback) {
+          fetch("https://ipinfo.io/json?token=<YOUR_TOKEN>", {
+            headers: { Accept: "application/json" },
+          })
+            .then((resp) => resp.json())
+            .then((resp) => {
+              callback(resp.country);
+            })
+            .catch(() => {
+              callback("us");
+            });
+        },
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        // تفعيل خيار البحث
+        allowDropdown: true,
+        autoHideDialCode: true,
+        autoPlaceholder: "polite",
+        dropdownContainer: document.body,
+        excludeCountries: ["us"],
+        formatOnDisplay: true,
+        hiddenInput: "full_number",
+        nationalMode: true,
+        separateDialCode: true,
+        preferredCountries: ["us", "gb", "ca"],
+        customContainer: "intl-tel-input separate-dial-code",
+        separateDialCode: true,
+        initialCountry: "auto",
+        excludeCountries: ["af", "al"],
+        geoIpLookup: function (callback) {
+          fetch("https://ipinfo.io", {
+            headers: { Accept: "application/json" },
+          })
+            .then((resp) => resp.json())
+            .then((resp) => {
+              const countryCode = resp && resp.country ? resp.country : "us";
+              callback(countryCode);
+            });
+        },
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        // إضافة البحث
+        placeholderNumberType: "MOBILE",
+        separateDialCode: true,
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

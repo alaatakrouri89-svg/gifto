@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store | PRODACTS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="icon" href="/images/logo.png" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- start-header -->
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-lg-4 d-flex justify-content-start">
+              <a href=""><img width="40%" src="/images/logo.png" alt="" /></a>
+            </div>
+            <div class="col-6 col-lg-4 d-flex align-items-center">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="ابحث عن الهدية المطلوبة"
+              />
+            </div>
+            <div
+              class="col-lg-4 d-flex align-items-center my-butn justify-content-end d-lg-flex d-none"
+            >
+              <a
+                data-bs-toggle="offcanvas"
+                href="#cart-canvas"
+                role="button"
+                aria-controls="offcanvasExample"
+                ><span>السلة</span><i class="fa-solid fa-cart-arrow-down"></i
+              ></a>
+              <a
+                data-bs-toggle="offcanvas"
+                href="#user-canvas"
+                role="button"
+                aria-controls="offcanvasExample"
+                ><span>الدخول</span><i class="fa-solid fa-user"></i
+              ></a>
+              <a href=""
+                ><span>المفضلة</span><i class="fa-solid fa-heart"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bot">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  href="#user-canvas"
+                >
+                  <i class="fa-solid fa-user"></i>
+                </button>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  href="#cart-canvas"
+                >
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                </button>
+              </div>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">الرئيسية</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="category.html">مناسبة للاطفال</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="category.html">رجالي</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="category.html">نسائي</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="category.html">قوالب كيك</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="category.html">ورود</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end-header -->
+
+    <!-- start-prodact -->
+    <div class="container">
+      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+        <ol class="breadcrumb mt-3">
+          <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+          <li class="breadcrumb-item" aria-current="page">قوالب كيك</li>
+          <li class="breadcrumb-item active" aria-current="page">
+            قالب كيك التيراميسو
+          </li>
+        </ol>
+      </nav>
+      <div class="row justify-content-end gap-4">
+        <div class="col-md-4 images-prodact my-5 my-md-0">
+          <div class="modal-img mt-4">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators carousel-position">
+                <img
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active slider-images"
+                  src="images/tiramisu1.jpg"
+                  alt=""
+                />
+                <img
+                  class="slider-images"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  src="images/tiramisu2.jpg"
+                  alt=""
+                />
+                <img
+                  class="slider-images"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  src="images/tiramisu3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/tiramisu1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/tiramisu2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/tiramisu3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 text-center my-5 my-md-4">
+          <div class="modal-info">
+            <img
+              class="my-5 mt-md-0"
+              width="75%"
+              height="150px"
+              src="/images/modal-logo.png"
+              alt=""
+            />
+            <h1>قالب كيك التيراميسو</h1>
+            <p class="my-5">
+              نوع جديد كيك التيراميسو الغية بكريما النسكافية التي تطفي طعم رائع
+            </p>
+          </div>
+          <div class="customer-review my-5">
+            <div class="modal-star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="modal-price">
+              <span>السعر:</span>
+              <span>75$</span>
+            </div>
+          </div>
+          <div class="modal-r-butn mt-5">
+            <div>
+              <a href="cart.html">
+                <button class="btn btn-danger">اضافة الى السلة</button>
+              </a>
+              <a href="payment.html">
+                <button class="btn btn-success">شراء الان</button>
+              </a>
+            </div>
+            <div class="btn-group bord" role="group" aria-label="Basic example">
+              <button type="button" class="btn">-</button>
+              <button type="button" class="btn">1</button>
+              <button type="button" class="btn">+</button>
+            </div>
+          </div>
+          <hr />
+          <div class="category-modal">
+            <div class="row">
+              <div class="col category-mo mt-4">
+                <span>التصنيف:</span>
+                <span>قالب كيك</span>
+              </div>
+              <div class="col d-flex gap-2 mt-4 modal-icons">
+                <span>مشاركة</span>
+                <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end-prodact -->
+
+    <!-- start-prodact-reviews -->
+    <section>
+      <div class="container mt-5">
+        <ul class="nav nav-tabs mt-4">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              data-bs-toggle="tab"
+              href="#about-prodact"
+              >وصف المنتج</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#reviews"
+              >مراجعة المنتج</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#shipping"> الشحن</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane fade mt-2 show active" id="about-prodact">
+            <div class="row row-cols-md-2 flex-column-reverse flex-md-row">
+              <div class="col my-5">
+                <h3 class="reviews-second">مكوّنات التيراميسو الأساسية</h3>
+                <p class="text-center">
+                  تيراميسو هو حلوى إيطالية شهيرة تُحضَّر من طبقات بسكويت
+                  السافوياردي المنقوع في القهوة مع كريمة الجبن ماسكربوني ورشة
+                  كاكاو على السطح، وتُقدَّم عادة باردة.​ يُعد من الحلويات الغنية
+                  بالسعرات الحرارية بسبب محتواه العالي من الدسم والسكر.
+                </p>
+                <h3 class="reviews-second">السعرات الحرارية والقيم الغذائية</h3>
+                <p class="text-center">
+                  السعرات تختلف حسب الوصفة، لكن أغلب الوصفات الكلاسيكية
+                  للتيراميسو تحتوي تقريبًا بين 300 و 470 سعرة حرارية في الحصة
+                  الواحدة (حوالي 80–120 غرام تقريبًا).​ في وصفات منزلية شائعة،
+                  تبلغ السعرات تقريبًا 300–360 سعرة حرارية للحصة في النسخ الأخف،
+                  وقد تتجاوز 400–450 سعرة في النسخ الغنية بالماسـكربوني والكريمة
+                  والبيض
+                </p>
+                <h3 class="reviews-second">ملاحظات صحية وغذائية</h3>
+                <p class="text-center">
+                  مناسب لعشّاق القهوة؛ يمكن جعل القهوة منزوعة الكافيين للأطفال
+                  أو من يتجنب الكافيين.​ بعض الوصفات تحتوي على بيض نيّئ؛ يُفضَّل
+                  استخدام وصفات يُسخَّن فيها البيض أو الاستعاضة عنه لتقليل مخاطر
+                  التسمم الغذائي.​ التيراميسو غير مناسب لمن لديهم حساسية من
+                  الحليب أو البيض أو الغلوتين (إلا إذا استُخدمت بدائل خالية من
+                  هذه المكوّنات).
+                </p>
+              </div>
+              <div class="col my-5">
+                <img class="img-fluid" src="images/tiramisu4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade mt-2" id="reviews">
+            <div class="row row-cols-md-2 flex-column flex-md-row">
+              <div class="col mt-4">
+                <h3 class="text-center reviews-second">
+                  يسرنا ابداء رايك بالمنتج
+                </h3>
+                <form action="">
+                  <div class="mb-3">
+                    <label for="" class="form-label"></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="اسم المستخدم"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label"></label>
+                    <input
+                      type="email"
+                      class="form-control text-start"
+                      placeholder="البريد الالكتروني "
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label"></label>
+                    <textarea
+                      name=""
+                      id=""
+                      class="form-control"
+                      rows="5"
+                    ></textarea>
+                  </div>
+                  <button class="btn w-100 btn-danger">
+                    شكرا لمشاركتنا رايك
+                  </button>
+                </form>
+              </div>
+              <div class="col mt-4">
+                <h3 class="text-center reviews-second">تقييمات العملاء</h3>
+                <div
+                  class="modal-stars d-flex flex-md-row align-items-center gap-4"
+                >
+                  <div class="my-4">
+                    <h3 class="reviews-second">4.6</h3>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <p class="reviews-second">3200 عميل ابدى رايه في المنتج</p>
+                <div class="mt-5 modal-stars d-flex flex-column gap-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <span>1 <i class="fa-solid fa-star"></i></span>
+                    <div
+                      class="progress flex-grow-1"
+                      role="progressbar"
+                      aria-label="Animated striped example"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar progress-bar-striped progress-bar-animated"
+                        style="width: 10%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <span>2 <i class="fa-solid fa-star"></i></span>
+                    <div
+                      class="progress flex-grow-1"
+                      role="progressbar"
+                      aria-label="Animated striped example"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar progress-bar-striped progress-bar-animated"
+                        style="width: 35%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <span>3 <i class="fa-solid fa-star"></i></span>
+                    <div
+                      class="progress flex-grow-1"
+                      role="progressbar"
+                      aria-label="Animated striped example"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar progress-bar-striped progress-bar-animated"
+                        style="width: 25%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <span>4 <i class="fa-solid fa-star"></i></span>
+                    <div
+                      class="progress flex-grow-1"
+                      role="progressbar"
+                      aria-label="Animated striped example"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar progress-bar-striped progress-bar-animated"
+                        style="width: 50%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <span>5 <i class="fa-solid fa-star"></i></span>
+                    <div
+                      class="progress flex-grow-1"
+                      role="progressbar"
+                      aria-label="Animated striped example"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar progress-bar-striped progress-bar-animated"
+                        style="width: 80%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade mt-2" id="shipping">
+            <div class="row row-cols-md-2 flex-column-reverse flex-md-row">
+              <div class="col my-5">
+                <h3 class="reviews-second">تجهيز الكيك قبل التغليف</h3>
+                <p>
+                  برّد الكيك جيدًا في الثلاجة عدة ساعات حتى تتماسك الطبقات
+                  والزينة. ثبّت الكيك على قاعدة كرتون سميكة بنفس مقاسه، ويمكن
+                  لصقه بقليل من الكريمة حتى لا يتحرك. إذا كان الكيك عاليًا أو
+                  متعدد الأدوار، استخدم أعواد خشبية (أسياخ) داخلية لتثبيت
+                  الأدوار.
+                </p>
+                <h3 class="reviews-second">طريقة التغليف</h3>
+                <p>
+                  ضع الكيك في علبة كيك صلبة تناسب حجمه تمامًا حتى لا يكون هناك
+                  فراغ كبير للحركة. املأ أي فراغ حول القاعدة بورق فقاعات (bubble
+                  wrap) أو مناديل سميكة أو فويل مكور لتثبيت العلبة من الداخل.
+                  لفّ علبة الكيك من الخارج بورق فقاعات ثم ضعها داخل كرتون شحن
+                  أكبر مع حشوة (فوم، ورق، فُقاعات) من كل الجوانب. تأكد أن العلبة
+                  لا تتحرك عند هز الكرتون برفق؛ إذا تحركت، أضف حشوة أكثر.
+                </p>
+                <h3 class="reviews-second">نصائح إضافية</h3>
+                <p>
+                  إذا أمكن، جرّب مرة أولى على كيك تجريبي لترى النتيجة قبل إرسال
+                  كيك مهم (عيد ميلاد/مناسبة كبيرة). يمكن التفكير في بديل أسهل
+                  للشحن مثل “جار الكيك” (cake jars) أو قطع كب كيك؛ تكون أصغر
+                  وأقل عرضة للتلف. تجنّب التزيينات الثقيلة جدًا أو القطع غير
+                  المثبتة جيدًا (مثل تماثيل كبيرة أو شوكولاتة واقفة بدون دعم).
+                  إذا أخبرت بنوع الكيكة (كريمة، شوكولاتة، فواكه، …) ومدة الشحن
+                  المتوقعة، يمكن إعطاؤك خطوات أكثر دقة تناسب حالتك.
+                </p>
+              </div>
+              <div class="col my-5">
+                <img class="img-fluid" src="images/shipping.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end-prodact-reviews -->
+
+    <!-- start-slider-reviews -->
+    <section>
+      <div class="container">
+        <div class="mt-5">
+          <h2>منتجات مشابهة</h2>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper mt-5">
+            <!-- Slides -->
+            <div class="col mt-2 swiper-slide">
+              <div class="card overflow-hidden prodact-body">
+                <div class="prodact-fav">
+                  <a
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#prodact-modal"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i
+                  ></a>
+                  <a href=""> <i class="fa-regular fa-heart"></i></a>
+                  <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="/cake-images/cake1.jpg" alt="" />
+                <div class="prodact-det">
+                  <h3>قالب كيك</h3>
+                  <p>قالب كيك العيد ميلاد</p>
+                </div>
+                <div class="starse mb-2 text-center">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="prodact-prices mb-1 text-center">
+                  <span>السعر:</span>
+                  <span>75$</span>
+                </div>
+                <div class="prodact-btn">
+                  <button onclick="alert('تم الاضافة للسلة')" class="btn w-100">
+                    اضافة الى السلة
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-2 swiper-slide">
+              <div class="card overflow-hidden prodact-body">
+                <div class="prodact-fav">
+                  <a
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#prodact-modal"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i
+                  ></a>
+                  <a href=""> <i class="fa-regular fa-heart"></i></a>
+                  <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="/cake-images/cake2.jpg" alt="watch" />
+                <div class="prodact-det">
+                  <h3>قالب كيك</h3>
+                  <p>كيك مزين بالماكرون اللذيذ</p>
+                </div>
+                <div class="starse mb-2 text-center">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="prodact-prices mb-1 text-center">
+                  <span>السعر:</span>
+                  <span>100$</span>
+                </div>
+                <div class="prodact-btn">
+                  <button onclick="alert('تم الاضافة للسلة')" class="btn w-100">
+                    اضافة الى السلة
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-2 swiper-slide">
+              <div class="card overflow-hidden prodact-body">
+                <div class="prodact-fav">
+                  <a
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#prodact-modal"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i
+                  ></a>
+                  <a href=""> <i class="fa-regular fa-heart"></i></a>
+                  <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="/cake-images/cake-new.jpg" alt="" />
+                <div class="prodact-det">
+                  <h3>قالب كيك</h3>
+                  <p>كيك التيراميسو اللذيذ</p>
+                </div>
+                <div class="starse text-center mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="prodact-prices mb-1 text-center">
+                  <span>السعر:</span>
+                  <span>75$</span>
+                </div>
+                <div class="prodact-btn">
+                  <button onclick="alert('تم الاضافة للسلة')" class="btn w-100">
+                    اضافة الى السلة
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-2 swiper-slide">
+              <div class="card overflow-hidden prodact-body">
+                <div class="prodact-fav">
+                  <a
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#prodact-modal"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i
+                  ></a>
+                  <a href=""> <i class="fa-regular fa-heart"></i></a>
+                  <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="/cake-images/blackfriday-cake1.jpg" alt="" />
+                <div class="prodact-det">
+                  <h3>ادوات ميك اب</h3>
+                  <p>قالب كيك الشوكولا الداكنة</p>
+                </div>
+                <div class="starse mb-2 text-center">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="prodact-prices text-center mb-1">
+                  <span>السعر:</span>
+                  <span>65$</span>
+                </div>
+                <div class="prodact-btn">
+                  <button onclick="alert('تم الاضافة للسلة')" class="btn w-100">
+                    اضافة الى السلة
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-2 swiper-slide">
+              <div class="card overflow-hidden prodact-body">
+                <div class="prodact-fav">
+                  <a
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#prodact-modal"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i
+                  ></a>
+                  <a href=""> <i class="fa-regular fa-heart"></i></a>
+                  <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="/cake-images/blackfriday-cake2.jpg" alt="" />
+                <div class="prodact-det">
+                  <h3>قالب كيك</h3>
+                  <p>كرات كيك الشوكولاتة</p>
+                </div>
+                <div class="starse text-center mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="prodact-prices text-center mb-1">
+                  <span>السعر:</span>
+                  <span>25$</span>
+                </div>
+                <div class="prodact-btn">
+                  <button onclick="alert('تم الاضافة للسلة')" class="btn w-100">
+                    اضافة الى السلة
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-2 swiper-slide">
+              <div class="card overflow-hidden prodact-body">
+                <div class="prodact-fav">
+                  <a
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#prodact-modal"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i
+                  ></a>
+                  <a href=""> <i class="fa-regular fa-heart"></i></a>
+                  <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="/cake-images/cake3-p.jpg" alt="" />
+                <div class="prodact-det">
+                  <h3>قالب كيك</h3>
+                  <p>كيك شوكولاتة الاوريو</p>
+                </div>
+                <div class="starse text-center mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="prodact-prices text-center mb-1">
+                  <span>السعر:</span>
+                  <span>50$</span>
+                </div>
+                <div class="prodact-btn">
+                  <button onclick="alert('تم الاضافة للسلة')" class="btn w-100">
+                    اضافة الى السلة
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-2 swiper-slide">
+              <div class="card overflow-hidden prodact-body">
+                <div class="prodact-fav">
+                  <a
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#prodact-modal"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i
+                  ></a>
+                  <a href=""> <i class="fa-regular fa-heart"></i></a>
+                  <a href=""> <i class="fa-solid fa-code-compare"></i></a>
+                </div>
+                <img src="/cake-images/sp-cake2.jpg" alt="" />
+                <div class="prodact-det">
+                  <h3>قالب كيك</h3>
+                  <p>قالب كيك مغطى بالفراولة</p>
+                </div>
+                <div class="starse text-center mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="prodact-prices text-center mb-1">
+                  <span>السعر:</span>
+                  <span>100$</span>
+                </div>
+                <div class="prodact-btn">
+                  <button onclick="alert('تم الاضافة للسلة')" class="btn w-100">
+                    اضافة الى السلة
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+      </div>
+    </section>
+    <!-- end-slider-reviews -->
+
+    <!-- start-footer -->
+    <footer>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+          <div class="col footer-f">
+            <img class="mb-2" src="images/logo.png" alt="logo" />
+            <p>
+              اكتشف عالم الهدايا المميزة مع متجرنا، حيث نؤمن أن كل هدية تحمل
+              رسالة خاصة. نقدم لك مجموعة متنوعة من الهدايا الأنيقة والمبتكرة
+              التي تناسب جميع المناسبات
+            </p>
+            <ul class="navbar-nav">
+              <li><i class="fa-solid fa-location-dot"></i>سوريا-دمشق</li>
+              <li><i class="fa-solid fa-phone"></i>0962274517</li>
+              <li>
+                <i class="fa-solid fa-envelope-open"></i
+                >alaatakrouri89@gmail.com
+              </li>
+            </ul>
+          </div>
+          <div class="col mt-5 text-center footer-s">
+            <h3>روابط مهمة</h3>
+            <ul class="navbar-nav">
+              <li>
+                <a href=""
+                  ><i class="fa-brands fa-instagram"></i>gifto-instagram</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-brands fa-facebook"></i>gifto-facebook</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-brands fa-whatsapp"></i>gifto-whatsapp</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-brands fa-linkedin"></i>alaa-linkedin</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col mt-5 text-center footer-t">
+            <h3>التصنيفات</h3>
+            <ul class="navbar-nav">
+              <li><a href="">رجالي</a></li>
+              <li><a href="">نسائي</a></li>
+              <li><a href="">ولادي</a></li>
+              <li><a href="">حسومات</a></li>
+            </ul>
+          </div>
+          <div class="col mt-5 text-center footer-fo">
+            <h3>النشرة البريدية</h3>
+            <p>
+              كتشف عالم الهدايا المميزة مع متجرنا، حيث نؤمن أن كل هدية تحمل
+              رسالة خاصة. نقدم لك مجموعة متنوعة من الهدايا الأنيقة
+            </p>
+            <form action="">
+              <input
+                class="form-control text-start mt-3"
+                type="email"
+                placeholder="ادخل بريدك الالكتروني"
+              />
+            </form>
+            <button class="mt-4 btn w-100 footer-btn">التسجيل في النشرة</button>
+          </div>
+        </div>
+        <div
+          class="row row-cols-1 row-cols-md-2 footer-bootm d-flex justify-content-start"
+        >
+          <div class="col pay-footer">
+            <a href=""><i class="fa-solid fa-credit-card fa-2x"></i></a>
+            <a href=""><i class="fa-regular fa-money-bill-1 fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-cc-paypal fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-bitcoin fa-2x"></i></a>
+          </div>
+          <div class="col footer-c d-flex justify-content-end">
+            <p>جميع الحقوق محفوظة © 2025</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end-footer -->
+
+    <!-- canvas-cart -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="cart-canvas"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">السلة</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row row-mini-cart">
+          <div class="col-12 mini-cart">
+            <img width="20%" src="/images/cake-new.jpg" alt="" />
+            <p>قالب كيك التيراميسو</p>
+            <div class="btn-group bord" role="group" aria-label="Basic example">
+              <button type="button" class="btn">-</button>
+              <button type="button" class="btn">1</button>
+              <button type="button" class="btn">+</button>
+            </div>
+          </div>
+          <div class="col-12 mini-cart">
+            <img width="20%" src="/images/girls-new.jpg" alt="" />
+            <p>ادوات ميك اب</p>
+            <div class="btn-group bord" role="group" aria-label="Basic example">
+              <button type="button" class="btn">-</button>
+              <button type="button" class="btn">1</button>
+              <button type="button" class="btn">+</button>
+            </div>
+          </div>
+          <div class="col-12 mini-cart">
+            <img width="20%" src="/images/men-new.jpg" alt="" />
+            <p>ساعة رجالي</p>
+            <div class="btn-group bord" role="group" aria-label="Basic example">
+              <button type="button" class="btn">-</button>
+              <button type="button" class="btn">1</button>
+              <button type="button" class="btn">+</button>
+            </div>
+          </div>
+          <div class="col-12 mini-cart">
+            <img width="20%" src="/images/kids-new.jpg" alt="" />
+            <p>حافظة مياة</p>
+            <div class="btn-group bord" role="group" aria-label="Basic example">
+              <button type="button" class="btn">-</button>
+              <button type="button" class="btn">1</button>
+              <button type="button" class="btn">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="canvas-alert mt-2">
+          <p class="alert alert-danger text-center">المجموع الكلي 300$ فقط</p>
+          <div class="canvas-btn-bot">
+            <a href="cart.html">
+              <button class="btn btn-danger">تفاصيل السلة</button>
+            </a>
+            <button class="btn btn-success">اتمام الطلب</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end-canvas -->
+    <!-- canvas-sign -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="user-canvas"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">تسجيل الدخول</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="off-sign-in">
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">اسم المستخدم</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">كلمة المرور</label>
+              <input type="password" class="form-control" id="password" />
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >تذكرني
+              </label>
+            </div>
+            <button type="submit" class="btn w-100 sign-in">
+              تسجيل الدخول
+            </button>
+          </form>
+          <div class="alert alert-danger text-center mt-2 remeber mt-3">
+            <a href="">هل نسيت كلمة المرور</a>
+          </div>
+          <hr />
+          <div class="text-center">
+            <div class="mt-5 new-acc">
+              <i class="fa-solid fa-user-plus fa-3x"></i>
+              <p>للانضمام الى مجتمعنا</p>
+            </div>
+            <button class="btn btn-success w-100">انشاء حساب جديد</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end-canvas -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
